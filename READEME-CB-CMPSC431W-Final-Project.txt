@@ -1,0 +1,49 @@
+README for CMPSC 431W Final Project
+This CLI (Command-Line Interface) application is designed to manage a PostgreSQL database for a system that handles laptop specifications and product details. Each function within the CLI provides a specific operation for interacting with the database, allowing users to insert, delete, update, search, and perform various other data manipulations.
+
+Below is a description of the functions within the CLI programming:
+
+connect_to_db()
+Establishes a connection to the PostgreSQL database using given credentials. It returns a connection object if successful, or None if an error occurs.
+
+insert_data(conn, table_name)
+Allows users to insert new records into a specified table. Depending on the table selected, the function will prompt the user for the relevant data needed to create a new record within the table.
+
+delete_data(conn)
+Removes a record from the laptop table based on a model name provided by the user. This function will delete the record if it exists.
+
+update_data(conn)
+Updates details of a laptop record based on the model name. The user can specify which attribute to update and the new value for that attribute. (Model name must be specific as a general name would be unsafe and not promote the integrity of the data.) 
+
+            --Example
+                       Deleting data with the model name "mac" where multiple records could have "mac" in their model name such as "Macbook Pro, iMac, etc". Thus a specific model name must be entered.
+
+search_data(conn)
+Enables users to find records in the database based on certain criteria. Users can search for laptop models or products by brand name.
+
+aggregate_functions(conn, table_name)
+Performs aggregate calculations, such as sum, average, count, minimum, and maximum, on a specified column within a table. It will prompt the user for the type of aggregation and the column to perform it on.
+
+sorting(conn, table_name)
+Sorts the results of a query based on a specified column. Users can choose the column and order (ASC or DESC) for sorting.
+
+joins(conn)
+Combines data from multiple tables using relationships defined between them. Users can perform inner, left, or right joins by specifying the tables and the type of join.
+
+grouping(conn, table_name)
+Groups query results based on a specified column. This function will prompt the user for the column to group by.
+
+subqueries(conn, table_name)
+Supports nested operations within queries, allowing for explicit data retrieval.
+
+transactions(conn)
+Handles transactions to ensure the consistency and reliability of database operations. It includes functionality for applying discounts to laptop prices and ensures changes are committed or rolled back appropriately.
+
+table_operations(conn, table_name)
+Acts as the central hub for interacting with specific tables. It loops through options allowing users to choose which operation to perform on the selected table.
+
+main()
+The entry point of the CLI application. It initiates a connection to the database and presents a menu for the user to choose which table to operate on or exit the program.
+
+Each function is designed with error handling to ensure that any issues during the operation do not affect the stability of the database and are communicated clearly to the user.
+.
