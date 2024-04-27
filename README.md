@@ -2,6 +2,8 @@ Cameron Burke
 CMPSC 431W
 Final Project CLI
 
+The project is based on the dataset provided by https://www.kaggle.com/datasets/bhavikjikadara/brand-laptops-dataset, with changed values/records. 
+
 Instructions to Install PostgreSQL:
 Please navigate to the official PostgreSQL site and install the download specific to your OS.
 Link: https://www.postgresql.org/download/
