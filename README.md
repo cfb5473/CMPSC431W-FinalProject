@@ -102,6 +102,7 @@ Each function is designed with error handling to ensure that any issues during t
 Sources + Video:
 
 https://github.com/cfb5473/CMPSC431W-FinalProject.git
+
 Github: git@github.com:cfb5473/CMPSC431W-FinalProject.git
 
 Video:
