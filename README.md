@@ -14,7 +14,7 @@ Once installed, you will need to reboot your machine as this will enable the sta
 	net start postgresql-x64-xx (the “xx” being the specific version number you have installed). 
 You can find the version number by typing in the command;
 	
-		psql –version
+		psql --version
 and this will then print out the version of PostgreSQL you have installed.
 
 After you start the service, you can then run the command;
