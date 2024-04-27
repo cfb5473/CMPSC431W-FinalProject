@@ -16,10 +16,12 @@ and this will then print out the version of PostgreSQL you have installed.
 
 After you start the service, you can then run the command;
 	--psql -U postgres (Do not include: standard user account)
-	--password: (Set during PostgreSQL installation)
+ 		password: (Set during PostgreSQL installation)
+   
 		or
+  
 	--psql -U (your user account created during installation)
-	--password: (Set during installation)
+ 		password: (Set during installation)
  
 After, you will have successfully started the PostgreSQL software terminal and are now able to connect to a database and run queries. 
 In the case of this project, please create a database called, “laptops2024”. 
