@@ -1,4 +1,54 @@
-# CMPSC431W-FinalProject
+Cameron Burke
+CMPSC 431W
+Final Project CLI
+
+Instructions to Install PostgreSQL:
+Please navigate to the official PostgreSQL site and install the download specific to your OS.
+Link: https://www.postgresql.org/download/
+
+During installation you will be prompted to create a password for the standard postgres account, please create a secure password as you will use this to login. 
+
+Once installed, you will need to reboot your machine as this will enable the start of the postgresql service on boot. If this does not start the service, you will need to start the service manually by entering the command, 
+net start postgresql-x64-xx (the “xx” being the specific version number you have installed). 
+You can find the version number by typing in the command;
+	psql –version
+and this will then print out the version of PostgreSQL you have installed.
+
+After you start the service, you can then run the command;
+	psql -U postgres (Do not include: standard user account)
+	password: (Set during PostgreSQL installation)
+		or
+	psql -U (your user account created during installation)
+	password: (Set during installation)
+After, you will have successfully started the PostgreSQL software terminal and are now able to connect to a database and run queries. 
+In the case of this project, please create a database called, “laptops2024”. 
+You can do this by running the command;
+	CREATE DATABASE laptops2024;
+and this will create the database. 
+You can run the following commands to connect to see if the database is present and connect to it;
+	\list                                                (Do not write: lists all databases on the PostgreSQL directory)
+	\c laptops2024                        (Connects to the laptops2024 database)
+
+You can now run queries directly or through the CLI python file. 
+
+Before running the python files use a PostgreSQL adapter that allows the connection to the PostgreSQL database. This package will need to be installed on the machine for the code to work properly. 
+First you will need to install python from their official site, https://www.python.org/downloads/. 
+Once installed run the command;
+		pip install psycopg2  (“pip” package installed is installed usually with python)
+
+To run the python file, please place the file in any directory, open a terminal, navigate to the directory the file is stored in and run the command below;
+	python CB-FinalProject.py  (Please make sure you have python installed beforehand)
+
+Now the CLI should work properly as well as the PostgreSQL database. Please continue to the README.txt.
+
+
+
+
+
+
+
+
+
 
 README for CMPSC 431W Final Project
 This CLI (Command-Line Interface) application is designed to manage a PostgreSQL database for a system that handles laptop specifications and product details. Each function within the CLI provides a specific operation for interacting with the database, allowing users to insert, delete, update, search, and perform various other data manipulations.
@@ -48,3 +98,12 @@ main()
 The entry point of the CLI application. It initiates a connection to the database and presents a menu for the user to choose which table to operate on or exit the program.
 
 Each function is designed with error handling to ensure that any issues during the operation do not affect the stability of the database and are communicated clearly to the user.
+
+Sources + Video:
+
+https://github.com/cfb5473/CMPSC431W-FinalProject.git
+Github: git@github.com:cfb5473/CMPSC431W-FinalProject.git
+
+Video:
+https://psu.mediaspace.kaltura.com/media/Screen%20Recording%20-%20Fri%20Apr%2026%202024%2019%3A24%3A46%20GMT-0400%20(Eastern%20Daylight%20Time)/1_51v2r56s
+
