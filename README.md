@@ -45,7 +45,7 @@ Before running the python files use a PostgreSQL adapter that allows the connect
 First you will need to install python from their official site, https://www.python.org/downloads/. 
 Once installed run the command;
 	
-		pip install psycopg2  (“pip” package installed is installed usually with python)
+		pip install psycopg2  (“pip” package is usually installed with python)
 
 To run the python file, please place the file in any directory, open a terminal, navigate to the directory the file is stored in and run the command;
  
